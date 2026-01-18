@@ -1,0 +1,26 @@
+# ~/.config/sxhkd/sxhkdrc
+super + b
+    wmctrl -xa vivaldi && wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz || vivaldi &
+
+super + c
+    wmctrl -xa code && wmctrl -r :ACTIVE: -b add,fullscreen || code &
+
+super + n
+    wmctrl -xa obsidian && wmctrl -r :ACTIVE: -b add,fullscreen || obsidian &
+
+super + m
+    wmctrl -xa telegram && wmctrl -r :ACTIVE: -b add,fullscreen || Telegram &
+
+super + t
+    wmctrl -xa Konsole && wmctrl -r :ACTIVE: -b add,fullscreen || konsole &
+
+super + i
+    wmctrl -xa todoist && wmctrl -r :ACTIVE: -b add,fullscreen || todoist &
+
+super + s
+    rofi -show combi -combi-modes "window,drun,run"
+
+super + shift + t
+    ~/.dotfiles/.local/bin/translator.sh
+
+# systemctl --user restart sxhkd
