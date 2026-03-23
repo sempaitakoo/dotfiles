@@ -82,5 +82,4 @@
     "extensions.ignoreRecommendations": true,
     "jupyter.askForKernelRestart": false,
     "workbench.activityBar.location": "bottom",
-    "workbench.sideBar.location": "right",
 }
