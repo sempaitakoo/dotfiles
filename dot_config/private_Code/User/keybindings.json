@@ -1,10 +1,67 @@
 [
     {
-        "key": "shift+enter",
-        "command": "workbench.action.terminal.sendSequence",
-        "args": {
-            "text": "\u001b\r"
-        },
-        "when": "terminalFocus"
-    }
+        "key": "ctrl+alt+up",
+        "command": "editor.action.insertCursorAbove"
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "editor.action.insertCursorBelow"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "alt+h",
+        "command": "editor.action.showHover"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.revealDefinition"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+shift+\\",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "outline.focus",
+    },
+    {
+        "key": "ctrl+shift+alt+o",
+        "command": "outline.collapse",
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+shift+alt+down",
+        "command": "workbench.action.terminal.resizePaneDown"
+    },
+    {
+        "key": "ctrl+shift+alt+up",
+        "command": "workbench.action.terminal.resizePaneUp"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "alt+shift+up",
+        "command": "editor.action.copyLinesUpAction"
+    },
+    {
+        "key": "alt+shift+down",
+        "command": "editor.action.copyLinesDownAction"
+    },
 ]

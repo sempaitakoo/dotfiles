@@ -1,9 +1,9 @@
 {
     "editor.inlayHints.enabled": "on",
     "clangd.arguments": [
-        "--background-index", // Индексация проекта в фоне
-        "--clang-tidy", // Включить проверку Best Practices на лету
-        "--header-insertion=never", // Не вставлять include автоматически (часто бесит)
+        "--background-index",
+        "--clang-tidy",
+        "--header-insertion=never",
         "--completion-style=detailed",
         "--function-arg-placeholders=true"
     ],
@@ -11,7 +11,6 @@
     "[cpp]": {
         "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
     },
-    "continue.enableTabAutocomplete": false,
     "zenMode.showTabs": "single",
     "breadcrumbs.enabled": true,
     "[markdown]": {
@@ -20,8 +19,6 @@
             "other": "on",
             "strings": "on"
         },
-        "editor.wordWrap": "bounded",
-        "editor.wordWrapColumn": 80
     },
     "[python]": {
         "editor.codeActionsOnSave": {
@@ -33,8 +30,6 @@
         "editor.formatOnSave": true,
         "editor.inlayHints.enabled": "onUnlessPressed",
     },
-    "caps-lock-state.choose_display_method": "method_background_color",
-    "caps-lock-state.line_background_color": "rgba(244, 182, 255, 0.6)",
     "editor.cursorSurroundingLines": 10,
     "editor.fontFamily": "'Jetbrains Mono', 'Fira Code', Consolas",
     "editor.fontLigatures": true,
@@ -43,7 +38,6 @@
         80
     ],
     "editor.smoothScrolling": true,
-    "errorLens.enabled": false,
     "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
@@ -78,7 +72,6 @@
     "workbench.editor.empty.hint": "hidden",
     "workbench.settings.editor": "json",
     "workbench.tree.renderIndentGuides": "always",
-    "Prettier-SQL.keywordCase": "upper",
     "editor.unicodeHighlight.invisibleCharacters": false,
     "github.copilot.enable": {
         "*": false,
@@ -87,53 +80,7 @@
         "scminput": false
     },
     "extensions.ignoreRecommendations": true,
-    "explorer.fileNesting.patterns": {
-        "*.ts": "${capture}.js",
-        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
-        "*.jsx": "${capture}.js",
-        "*.tsx": "${capture}.ts",
-        "tsconfig.json": "tsconfig.*.json",
-        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
-        "*.sqlite": "${capture}.${extname}-*",
-        "*.db": "${capture}.${extname}-*",
-        "*.sqlite3": "${capture}.${extname}-*",
-        "*.db3": "${capture}.${extname}-*",
-        "*.sdb": "${capture}.${extname}-*",
-        "*.s3db": "${capture}.${extname}-*"
-    },
-    "latex-workshop.latex.tools": [
-        {
-            "name": "xelatex",
-            "command": "xelatex",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "bibtex",
-            "command": "bibtex",
-            "args": [
-                "%DOCFILE%"
-            ]
-        }
-    ],
-    "latex-workshop.latex.recipes": [
-        {
-            "name": "xe->bib->xe*2",
-            "tools": [
-                "xelatex",
-                "bibtex",
-                "xelatex",
-                "xelatex"
-            ]
-        }
-    ],
-    "latex-workshop.latex.recipe.default": "xe->bib->xe*2",
     "jupyter.askForKernelRestart": false,
     "workbench.activityBar.location": "bottom",
     "workbench.sideBar.location": "right",
-    "claudeCode.preferredLocation": "panel"
 }
