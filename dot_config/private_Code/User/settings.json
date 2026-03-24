@@ -1,85 +1,85 @@
 {
-    "editor.inlayHints.enabled": "on",
-    "clangd.arguments": [
-        "--background-index",
-        "--clang-tidy",
-        "--header-insertion=never",
-        "--completion-style=detailed",
-        "--function-arg-placeholders=true"
-    ],
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "other": "on",
+      "strings": "on"
+    }
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit",
+      "source.unusedImports": "never"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
-    "[cpp]": {
-        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-    },
-    "zenMode.showTabs": "single",
-    "breadcrumbs.enabled": true,
-    "[markdown]": {
-        "editor.quickSuggestions": {
-            "comments": "on",
-            "other": "on",
-            "strings": "on"
-        },
-    },
-    "[python]": {
-        "editor.codeActionsOnSave": {
-            "source.unusedImports": "never",
-            "source.fixAll.ruff": "explicit",
-            "source.organizeImports.ruff": "explicit"
-        },
-        "editor.defaultFormatter": "charliermarsh.ruff",
-        "editor.formatOnSave": true,
-        "editor.inlayHints.enabled": "onUnlessPressed",
-    },
-    "editor.cursorSurroundingLines": 10,
-    "editor.fontFamily": "'Jetbrains Mono', 'Fira Code', Consolas",
-    "editor.fontLigatures": true,
-    "editor.minimap.enabled": false,
-    "editor.rulers": [
-        80
-    ],
-    "editor.smoothScrolling": true,
-    "explorer.compactFolders": false,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmPasteNative": false,
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "indentRainbow.colorOnWhiteSpaceOnly": true,
-    "indentRainbow.ignoreErrorLanguages": [
-        "*"
-    ],
-    "outline.showVariables": false,
-    "python.analysis.autoFormatStrings": true,
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.completeFunctionParens": true,
-    "python.analysis.inlayHints.callArgumentNames": "off",
-    "python.analysis.inlayHints.functionReturnTypes": true,
-    "python.analysis.inlayHints.pytestParameters": true,
-    "python.analysis.inlayHints.variableTypes": true,
-    "python.analysis.typeCheckingMode": "off",
-    "python.languageServer": "Pylance",
-    "python.terminal.activateEnvInCurrentTerminal": true,
-    "python.terminal.activateEnvironment": true,
-    "ruff.configurationPreference": "filesystemFirst",
-    "ruff.fixAll": false,
-    "security.workspace.trust.untrustedFiles": "open",
-    "telemetry.telemetryLevel": "off",
-    "terminal.integrated.smoothScrolling": true,
-    "workbench.colorCustomizations": {
-        "tree.indentGuidesStroke": "#c678dd"
-    },
-    "workbench.editor.empty.hint": "hidden",
-    "workbench.settings.editor": "json",
-    "workbench.tree.renderIndentGuides": "always",
-    "editor.unicodeHighlight.invisibleCharacters": false,
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
-    "extensions.ignoreRecommendations": true,
-    "jupyter.askForKernelRestart": false,
-    "workbench.activityBar.location": "bottom",
+    "editor.inlayHints.enabled": "onUnlessPressed"
+  },
+  "breadcrumbs.enabled": true,
+  "clangd.arguments": [
+    "--background-index",
+    "--clang-tidy",
+    "--header-insertion=never",
+    "--completion-style=detailed",
+    "--function-arg-placeholders=true"
+  ],
+  "editor.cursorSurroundingLines": 10,
+  "editor.fontFamily": "'Jetbrains Mono', 'Fira Code', Consolas",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.minimap.enabled": false,
+  "editor.rulers": [
+    80
+  ],
+  "editor.smoothScrolling": true,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+  "extensions.ignoreRecommendations": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "github.copilot.enable": {
+    "*": false,
+    "markdown": false,
+    "plaintext": false,
+    "scminput": false
+  },
+  "indentRainbow.colorOnWhiteSpaceOnly": true,
+  "indentRainbow.ignoreErrorLanguages": [
+    "*"
+  ],
+  "jupyter.askForKernelRestart": false,
+  "outline.showVariables": false,
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.inlayHints.callArgumentNames": "off",
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.typeCheckingMode": "off",
+  "python.languageServer": "Pylance",
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.terminal.activateEnvironment": true,
+  "ruff.configurationPreference": "filesystemFirst",
+  "ruff.fixAll": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.smoothScrolling": true,
+  "workbench.activityBar.location": "bottom",
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#c678dd"
+  },
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.settings.editor": "json",
+"workbench.tree.renderIndentGuides": "always",
+  "zenMode.showTabs": "single"
 }
