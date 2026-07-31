@@ -1,0 +1,104 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "disable_ai": true,
+  "cli_default_open_behavior": "existing_window",
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
+  "agent": {
+    "dock": "right",
+    "default_model": {
+      "provider": "ollama",
+      "model": "gemma4:e4b",
+      "enable_thinking": false,
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "language_models": {
+    "ollama": {
+      "api_url": "http://192.168.1.65:11434",
+    },
+  },
+  "show_edit_predictions": false,
+  "edit_predictions": {
+    "open_ai_compatible_api": {
+      "model": "",
+    },
+    "provider": "zed",
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+    "show_diagnostics": "errors",
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["basedpyright", "ruff"],
+      "inlay_hints": {
+        "show_background": false,
+        "enabled": true,
+      },
+    },
+  },
+  "lsp": {
+    "basedpyright": {
+      "settings": {
+        "basedpyright.analysis": {
+          "diagnosticMode": "openFilesOnly",
+        },
+      },
+    },
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "ui_font_size": 18,
+  "buffer_font_size": 18,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+  "inlay_hints": {
+    "show_parameter_hints": false,
+    "show_background": false,
+    "enabled": true,
+  },
+  // Panels
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left",
+    "default_width": 300,
+  },
+  "debugger": {
+    "dock": "right",
+  },
+  "git_panel": {
+    "tree_view": true,
+    "button": true,
+    "dock": "right",
+    "default_width": 300,
+  },
+  "outline_panel": {
+    "button": true,
+    "dock": "right",
+    "default_width": 300,
+  },
+  "project_panel": {
+    "button": true,
+    "dock": "left",
+    "default_width": 300,
+    "show_diagnostics": "errors",
+  },
+}
