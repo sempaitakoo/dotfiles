@@ -1,0 +1,12 @@
+[user]
+    name = sempaitakoo
+    email = karaevt04@gmail.com
+
+[init]
+    defaultBranch = main
+
+[core]
+    autocrlf = input
+
+[alias]
+    lg = log --oneline --graph --decorate --all
