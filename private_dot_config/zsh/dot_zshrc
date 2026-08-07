@@ -1,0 +1,48 @@
+HISTFILE="$ZDOTDIR/.zsh_history"
+HISTSIZE=10000
+SAVEHIST=10000
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt AUTO_CD
+
+
+bindkey -e
+
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+
+
+autoload -U select-word-style
+select-word-style bash
+
+bindkey '^H' backward-kill-word
+
+
+autoload -U compinit && compinit
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+
+[[ -f "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+[[ -f "$ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]] && source "$ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$PATH:$HOME/.cargo/bin
+
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+
+export VISUAL=micro
+export EDITOR=micro
+
+export VIMINIT='source $HOME/.config/vim/vimrc'
+
+
+eval "$(starship init zsh)"
+
+. /usr/share/autojump/autojump.sh
+
+alias ll='ls -lhA --color=auto'
